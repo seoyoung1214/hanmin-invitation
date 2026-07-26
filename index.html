@@ -431,29 +431,6 @@
       font-weight: 400;
     }
 
-    .footer-note {
-      border-top: 1px solid var(--border-dim);
-      padding: 28px 44px;
-      text-align: center;
-      position: relative;
-    }
-
-    .footer-note::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 44px; right: 44px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,169,110,0.12), transparent);
-    }
-
-    .footer-text {
-      font-size: 12px;
-      font-weight: 300;
-      color: var(--text-muted);
-      letter-spacing: 0.04em;
-      line-height: 1.9;
-    }
-
     .bottom-accent {
       height: 1px;
       background: linear-gradient(90deg,
@@ -495,7 +472,7 @@
     @media (max-width: 420px) {
       .header { padding: 44px 28px 36px; }
       .body { padding: 36px 28px 44px; }
-      .footer-note, .credit { padding-left: 28px; padding-right: 28px; }
+      .credit { padding-left: 28px; padding-right: 28px; }
       .title { font-size: 28px; }
     }
   </style>
@@ -560,7 +537,7 @@
         <span class="step-num">1</span>
         <div>
           <p class="step-name">1:1 채팅방 입장</p>
-          <p class="step-sub">운영진과의 1:1 오픈채팅으로 인증을 시작해요</p>
+          <p class="step-sub">"동문 채팅방 입장 문의드립니다." 남겨주시면 동문 인증 폼 전달 드립니다.</p>
           <div class="step-links">
             <a class="step-chip" href="https://open.kakao.com/o/srmibKmi" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -593,13 +570,9 @@
       </div>
     </div>
     <p class="chat-note">
-      모임의 신뢰성을 유지하고 체계적인 동문 관리를 위해 최소한의 정보를 수집하고 있어요.
+      모임의 신뢰성을 유지하고 체계적인 동문 관리를 위해 최소한의 정보를 수집하고 있습니다.
       작성해 주신 내용은 <em>졸업생 확인 및 내부 관리 용도로만</em> 사용됩니다.
     </p>
-  </div>
-
-  <div class="footer-note">
-    <p class="footer-text">한민고등학교 동문 네트워킹의 초대장과 소식을<br>이곳에 차곡차곡 모아갑니다.</p>
   </div>
 
   <div class="bottom-accent"></div>
