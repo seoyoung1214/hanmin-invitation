@@ -379,6 +379,41 @@
       line-height: 1.6;
     }
 
+    .step-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .step-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 13px;
+      background: transparent;
+      border: 1px solid var(--border-mid);
+      border-radius: 1px;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--gold-mid);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      transition: all 0.25s ease;
+    }
+
+    .step-chip:hover {
+      border-color: rgba(201,169,110,0.45);
+      color: var(--gold-bright);
+    }
+
+    .step-chip svg {
+      width: 11px;
+      height: 11px;
+      fill: currentColor;
+      opacity: 0.8;
+    }
+
     .chat-btn {
       display: flex;
       align-items: center;
@@ -559,6 +594,20 @@
         <div>
           <p class="step-name">1:1 채팅방에 캡처본 보내기</p>
           <p class="step-sub">캡처본으로 졸업생 인증을 진행합니다</p>
+          <div class="step-links">
+            <a class="step-chip" href="https://open.kakao.com/o/srmibKmi" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+              </svg>
+              김영채 1:1 채팅
+            </a>
+            <a class="step-chip" href="https://open.kakao.com/o/sVfaymni" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+              </svg>
+              김서영 1:1 채팅
+            </a>
+          </div>
         </div>
       </div>
       <div class="step-item">
