@@ -414,47 +414,21 @@
       opacity: 0.8;
     }
 
-    .chat-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      width: 100%;
-      padding: 15px 20px;
-      background: linear-gradient(135deg, rgba(201,169,110,0.14) 0%, rgba(201,169,110,0.06) 100%);
-      border: 1px solid rgba(201,169,110,0.45);
-      border-radius: 1px;
-      font-size: 13px;
+    .chat-note {
+      border: 1px solid var(--border-dim);
+      background: var(--bg-surface);
+      padding: 16px 18px;
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+      line-height: 1.9;
+    }
+
+    .chat-note em {
+      color: var(--gold-mid);
+      font-style: normal;
       font-weight: 400;
-      color: var(--gold-bright);
-      text-decoration: none;
-      letter-spacing: 0.12em;
-      transition: all 0.25s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .chat-btn::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(201,169,110,0.12) 0%, transparent 60%);
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-
-    .chat-btn:hover {
-      border-color: var(--gold-mid);
-      color: var(--gold-pale);
-      transform: translateY(-1px);
-    }
-    .chat-btn:hover::before { opacity: 1; }
-
-    .chat-btn svg {
-      width: 14px;
-      height: 14px;
-      fill: currentColor;
-      opacity: 0.85;
     }
 
     .footer-note {
@@ -585,15 +559,8 @@
       <div class="step-item">
         <span class="step-num">1</span>
         <div>
-          <p class="step-name">졸업생 인증 구글폼 작성</p>
-          <p class="step-sub">작성 완료 화면을 캡처해 주세요</p>
-        </div>
-      </div>
-      <div class="step-item">
-        <span class="step-num">2</span>
-        <div>
-          <p class="step-name">1:1 채팅방에 캡처본 보내기</p>
-          <p class="step-sub">캡처본으로 졸업생 인증을 진행합니다</p>
+          <p class="step-name">1:1 채팅방 입장</p>
+          <p class="step-sub">운영진과의 1:1 오픈채팅으로 인증을 시작해요</p>
           <div class="step-links">
             <a class="step-chip" href="https://open.kakao.com/o/srmibKmi" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -611,19 +578,24 @@
         </div>
       </div>
       <div class="step-item">
+        <span class="step-num">2</span>
+        <div>
+          <p class="step-name">졸업생 인증 구글폼 작성</p>
+          <p class="step-sub">1:1 채팅으로 받은 링크에서 폼을 작성해 주세요</p>
+        </div>
+      </div>
+      <div class="step-item">
         <span class="step-num">3</span>
         <div>
-          <p class="step-name">오픈채팅방 입장</p>
-          <p class="step-sub">인증 후 받은 링크로 동문 오픈채팅방에 들어오세요</p>
+          <p class="step-name">동문 오픈채팅방 입장</p>
+          <p class="step-sub">인증 확인 후 받은 링크로 오픈채팅방에 들어오세요</p>
         </div>
       </div>
     </div>
-    <a class="chat-btn" href="https://forms.gle/d8Fz3xa4QAy3gHWY8" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-      </svg>
-      졸업생 인증하러 가기
-    </a>
+    <p class="chat-note">
+      모임의 신뢰성을 유지하고 체계적인 동문 관리를 위해 최소한의 정보를 수집하고 있어요.
+      작성해 주신 내용은 <em>졸업생 확인 및 내부 관리 용도로만</em> 사용됩니다.
+    </p>
   </div>
 
   <div class="footer-note">
